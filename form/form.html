@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<p>Input Password</p>
+<form action="/action_page.php">
+    Password:
+    <input name="password" type="password"/>
+</form>
+<br>
+<p>Input Radio</p>
+<form action="/action.php">
+    <input name="secret" value="fjndsvnmdsnvs34j23hnd" type="hidden">
+<!--    Dùng để chứa giá trị của form nhưng không hiển thị trên giao diện người dùng. Dữ liệu này cũng được đẩy lên server như bình thường.-->
+    Account: <input name="account" value="admin" type="text"><br>
+    Sở thích: <br>
+    <label><input name="hobby" value="travel" type="radio" checked/>Du lịch</label><br>
+    <label><input name="hobby" value="sport" type="radio"/>Thể thao</label><br>
+    <label><input name="hobby" value="cooking" type="radio" checked/>Nấu ăn</label><br>
+    <input type="reset" value="Reset"> <!--    xóa các giá trị trong 1 form đưa về lại mặc định-->
+    <input type="submit" value="send data"> <!--    Dùng để hiển thị một nút, có chức năng đẩy dữ liệu từ form lên server khi bấm vào.-->
+</form>
+<form method="POST">
+    <button type="button">
+        <img src="http://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg" width="200px">
+    </button>
+</form>
+<form method="POST">
+    <textarea cols="50" rows="4">This is a very very long text text text text text text text text</textarea>
+</form>
+
+</body>
+</html>
