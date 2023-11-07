@@ -1,0 +1,17 @@
+h1 {
+    background-color: red;
+    text-align: center;
+}
+body {
+    margin-left: 450px;
+    margin-right: 450px;
+    background-color: #b8f5f5;
+    text-align: left;
+}
+form {
+    background-color: white;
+}
+p {
+    display: inline-block;
+}
+
